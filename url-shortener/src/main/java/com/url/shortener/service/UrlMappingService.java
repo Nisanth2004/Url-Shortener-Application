@@ -23,6 +23,7 @@ public class UrlMappingService {
 
     private UrlMappingRepository urlMappingRepository;
     private ClickEventRepository clickEventRepository;
+
     public UrlMappingDto createShortUrl(String originalUrl, User user) {
         String shortUrl=generateShortUrl();
         UrlMapping urlMapping=new UrlMapping();
